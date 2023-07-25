@@ -13,7 +13,8 @@ alert(counter());
 alert(counter());
 alert(counter());
 alert(counter());</pre>
-<pre style="color: blueviolet;font-size: 20px;">ans: </pre>
+<pre style="color: blueviolet;font-size: 20px;">OutPut: 1 2 3
+We will get output in alert box one after another as mentioned above after the acceptance of one output(1,2,3,4). We have to click on "OK" button to get the next output(value).</pre>
 
 <pre style="font-size: 20px;">Q2. "let count = 0;
 (function () {
@@ -39,7 +40,18 @@ because let is block scope.</pre>
 <p style="font-size: 20px;">Q4. Write a code to calculate area of a rectangle using inner function. In this case outer function should accept parameter length and inner function should accept parameter breadth.</p>
 <pre style="color: blueviolet;font-size: 20px;">ans: </pre>
 <p style="font-size: 20px;">Q5. Take a variable in outer function and create an inner function to increase the counter every time it is called</p>
-<pre style="color: blueviolet;font-size: 20px;">ans: </pre>
+<pre style="color: blueviolet;font-size: 20px;">ans: function otFun(l){
+            function inFun(){
+                l++;
+                console.log(l);
+            }
+            inFun();
+            inFun();
+            inFun();
+        }
+        otFun(50);
+
+        Output : 51 52 53</pre>
 <pre style="font-size: 20px;">Q6."Print Output
 
 var a = 12;
@@ -75,4 +87,9 @@ because return function value</pre>
     
     })(456);
 })(123);"</pre>
-<pre style="color: blueviolet;font-size: 20px;">OutPut: ERROR!</pre>
+<pre style="color: blueviolet;font-size: 20px;">Output :
+                outerArg = 123
+                innerArg = 456
+                outerVar = a
+                innerVar = b
+                globalVar = xyz</pre>
