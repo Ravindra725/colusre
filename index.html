@@ -24,7 +24,8 @@ alert(counter());</pre>
   console.log(count); // What is logged?
 })();"</pre>
 
-<pre style="color: blueviolet;font-size: 20px;">ans: </pre>
+<pre style="color: blueviolet;font-size: 20px;">ans: OutPut: 1,0 
+because let is block scope.</pre>
 
 <pre style="font-size: 20px;">Q3. "for (var i = 0; i < 3; i++) {
   setTimeout(function log() {
@@ -32,7 +33,9 @@ alert(counter());</pre>
   }, 1000);
 }"</pre>
 
-<pre style="color: blueviolet;font-size: 20px;">ans: </pre>
+<pre style="color: blueviolet;font-size: 20px;">OutPut: 3
+    3
+    3</pre>
 <p style="font-size: 20px;">Q4. Write a code to calculate area of a rectangle using inner function. In this case outer function should accept parameter length and inner function should accept parameter breadth.</p>
 <pre style="color: blueviolet;font-size: 20px;">ans: </pre>
 <p style="font-size: 20px;">Q5. Take a variable in outer function and create an inner function to increase the counter every time it is called</p>
@@ -43,7 +46,8 @@ var a = 12;
 (function () {
   alert(a);
 })();"</pre>
-<pre style="color: blueviolet;font-size: 20px;">ans: </pre>
+<pre style="color: blueviolet;font-size: 20px;">OutPut: 12
+    We will get output in alert box</pre>
 <pre style="font-size: 20px;">Q7."var a = 10;
 var x = (function () {
   var a = 12;
@@ -52,7 +56,8 @@ var x = (function () {
   };
 })();
 x();"</pre>
-<pre style="color: blueviolet;font-size: 20px;">ans: </pre>
+<pre style="color: blueviolet;font-size: 20px;">OutPut: 12
+because return function value</pre>
 <pre style="font-size: 20px;">Q8."var globalVar = ""xyz"";
 
 (function outerFunc(outerArg) {
@@ -70,4 +75,4 @@ x();"</pre>
     
     })(456);
 })(123);"</pre>
-<pre style="color: blueviolet;font-size: 20px;">ans: </pre>
+<pre style="color: blueviolet;font-size: 20px;">OutPut: ERROR!</pre>
