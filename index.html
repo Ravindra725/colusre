@@ -38,7 +38,17 @@ because let is block scope.</pre>
     3
     3</pre>
 <p style="font-size: 20px;">Q4. Write a code to calculate area of a rectangle using inner function. In this case outer function should accept parameter length and inner function should accept parameter breadth.</p>
-<pre style="color: blueviolet;font-size: 20px;">ans: </pre>
+<pre style="color: blueviolet;font-size: 20px;">ans:
+    function otFun(l){
+            function inFun(b){
+                let aOR=l*b;
+                console.log(aOR);
+            }
+            inFun(20);
+        }
+        otFun(20);
+
+        Output : 400</pre>
 <p style="font-size: 20px;">Q5. Take a variable in outer function and create an inner function to increase the counter every time it is called</p>
 <pre style="color: blueviolet;font-size: 20px;">ans: function otFun(l){
             function inFun(){
